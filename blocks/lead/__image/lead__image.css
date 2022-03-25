@@ -1,0 +1,16 @@
+.lead__image {
+  margin: 64px auto 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+  .lead__image {
+    margin: 56px auto 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead__image {
+    margin: 40px auto 0;
+  }
+}
