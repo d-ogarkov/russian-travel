@@ -3,12 +3,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 740px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 200px;
 }
 
 .cover__background::before {
@@ -22,27 +22,27 @@
   right: 0;
   background: #2a2c2f;
   opacity: 0.3;
+  transition: opacity 0.3s ease-out 0s;
 }
 
 .cover__background:hover::before {
-  background: #2a2c2f;
   opacity: 0.8;
 }
 
-@media screen and (max-width: 1280px) {
-  .cover__background {
-    min-height: 640px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .cover__background {
     min-height: 480px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) {
   .cover__background {
-    min-height: 200px;
+    min-height: 640px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .cover__background {
+    min-height: 740px;
   }
 }
